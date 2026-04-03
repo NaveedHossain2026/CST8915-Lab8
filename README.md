@@ -15,7 +15,7 @@
 
 ### 1. MongoDB Persistence & Replica Set
 
-To ensure MongoDB data persists even during pod failures, a StatefulSet with a volumeClaimTemplate was implemented. Each MongoDB pod has its own PersistentVolume (Azure Disk). If a pod is deleted its disk is not lost and is reattached when the pod comes back , ensuring that no data is lost. The deployment uses 3 replicas. This allows the database to run as a cluster. If one node fails, the remaining nodes continue serving requests, ensuring high availability therefore there should be zero downtime for the Pet Store application.
+To ensure MongoDB data persists even during pod failures, a StatefulSet with a volumeClaimTemplate was implemented. Each MongoDB pod has its own PersistentVolume (Azure Disk). If a pod is deleted its disk is not lost and is reattached when the pod comes back , ensuring that no data is lost. The deployment uses 3 replicas. This allows the database to run as a cluster. If one node fails, the remaining nodes continue serving requests, ensuring high availability therefore there should be no downtime for the Pet Store application.
 
 ### 2. RabbitMQ Persistence
 
