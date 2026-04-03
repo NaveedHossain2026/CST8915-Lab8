@@ -9,7 +9,7 @@
 
 ## Demo Video
 
-🎥 [Watch Demo Video](https://youtu.be/0JBXmPROaMk)
+🎥 [Watch Demo Video](https://youtu.be/-HbJvvNdZOU)
 
 ---
 
@@ -22,8 +22,6 @@ To ensure MongoDB data persists even during pod failures, a StatefulSet with a v
 RabbitMQ also uses a StatefulSet with persistent storage. Data is stored in /var/lib/rabbitmq on a PersistentVolume. ​​Because data is stored on an external Azure Managed Disk, messages will not be lost during pod failures and any queued orders will be recovered when the RabbitMQ application restarts. 
 
 
-
-
 ## Acknowledgments
 
-I used Gemini to troubleshoot errors and resolve technical blockers during the lab.
+I used Gemini for guidance, troubleshooting errors, and resolving technical blockers during the lab.
